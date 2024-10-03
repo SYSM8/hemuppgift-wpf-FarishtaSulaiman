@@ -17,13 +17,25 @@
         <!-- Definiera kolumner-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock HorizontalAlignment="Center" Text="Välkommen detta är informationssidan" >
-        </TextBlock>
+
+        <StackPanel>
+            <!-- Första raden -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="Row" Text="Row" VerticalAlignment="Center"/>
+                <TextBox Width="60" Margin="5" TextChanged="TextBox_TextChanged"/>
+            <TextBlock Text="Column" VerticalAlignment="Center" />
+                <TextBox Width="60" Margin="5" TextChanged="TextBox_TextChanged_1"/>
+            </StackPanel>
+
+        </StackPanel>
+        <Button Grid.Column="1" Content="Apply" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.362,0.152" Margin="0,4,0,0" Height="19" Width="59"/>
+
+
 
     </Grid>
 </Window>
