@@ -17,5 +17,10 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        
+        <Button x:Name="btn1" Content="Grid" Grid.Row="0" Grid.Column="0" />
+        <Button x:Name="btn2" Content="StackPanel" Grid.Column="1" />
+        <Button x:Name="btn3" Content="WrapPanel" Grid.Row="1" />
+        <Button x:Name="btn4" Content="DockPanel" Grid.Column="1" Grid.Row="1" />
     </Grid>
 </Window>
