@@ -15,14 +15,14 @@ namespace Hemuppgift_WPFtemplate
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            Window windowGrid = new Window();
+            GridWindow windowGrid = new GridWindow();
             windowGrid.Show();
         }
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-           Window windowStackPanel = new Window();   
-            windowStackPanel.Show();
+           StackPanel StackPanel = new StackPanel();   
+            StackPanel.Show();
         }
 
         private void btn3_Click(object sender, RoutedEventArgs e)

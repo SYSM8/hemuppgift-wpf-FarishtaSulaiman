@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="StackPanel" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+
+    <StackPanel Orientation="Horizontal" >
+
+        <RadioButton Content="Horizontal" HorizontalAlignment="Left" Margin="5" Checked="RadioButton_Checked" />
+        <RadioButton Content="Vertikal" HorizontalAlignment="Left" Margin="5" Checked="RadioButton_Checked_1" />
+    </StackPanel>
+
+
 </Window>

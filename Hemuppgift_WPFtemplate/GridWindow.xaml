@@ -7,35 +7,47 @@
         mc:Ignorable="d"
         Title="GridWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
 
-        <!-- Definiera kolumner-->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-
+        <Grid x:Name="gridContainer"/>
         <StackPanel>
-            <!-- Första raden -->
-            <StackPanel Orientation="Horizontal">
-                <TextBlock x:Name="Row" Text="Row" VerticalAlignment="Center"/>
-                <TextBox Width="60" Margin="5" TextChanged="TextBox_TextChanged"/>
-            <TextBlock Text="Column" VerticalAlignment="Center" />
-                <TextBox Width="60" Margin="5" TextChanged="TextBox_TextChanged_1"/>
-            </StackPanel>
+        <!-- Första raden -->
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="Row" Text="Row" VerticalAlignment="Center"/>
+            <TextBox   x:Name="txtBox1" Width="60" Margin="5" />
+            <TextBlock x:Name="Column" Text="Column" VerticalAlignment="Center" />
+            <TextBox   x:Name="txtBox2" Width="60" Margin="5" />
+        </StackPanel>
 
         </StackPanel>
-        <Button Grid.Column="1" Content="Apply" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.362,0.152" Margin="0,4,0,0" Height="19" Width="59"/>
+
+        <Button Grid.Column="1" 
+            Grid.Row="0"
+            Content="Apply" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            RenderTransformOrigin="-0.362,0.152" 
+            Margin="0,4,0,0" 
+            Height="19" 
+            Width="59" 
+            Click="Button_Click"/>
+    
 
 
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+    </Grid.RowDefinitions>
 
+    <!-- Definiera kolumner-->
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
     </Grid>
+
 </Window>
