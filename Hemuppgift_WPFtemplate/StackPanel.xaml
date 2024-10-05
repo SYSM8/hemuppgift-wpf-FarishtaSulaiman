@@ -10,8 +10,12 @@
     <StackPanel Orientation="Horizontal" >
 
         <RadioButton Content="Horizontal" HorizontalAlignment="Left" Margin="5" Checked="RadioButton_Checked" />
-        <RadioButton Content="Vertikal" HorizontalAlignment="Left" Margin="5" Checked="RadioButton_Checked_1" />
+        <RadioButton HorizontalAlignment="Left" Margin="5" Checked="RadioButton_Checked_1" >
+            <ScrollBar HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </RadioButton>
+        
     </StackPanel>
+    
 
 
 </Window>
