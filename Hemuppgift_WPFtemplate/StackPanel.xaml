@@ -8,20 +8,20 @@
         Title="StackPanel" Height="450" Width="800">
 
     <Grid>
-        <!-- scrollbaren längst ut till höger -->
-        <DockPanel>
-            <ScrollBar HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        </DockPanel>
-        <StackPanel>
-        
-        <!-- min panel högst upp med mina radiobuttons-->
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+           
+            <!-- min panel högst upp med mina radiobuttons-->
         <StackPanel Orientation="Horizontal" >
-            <RadioButton Content="Horizontal" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked" IsChecked="True" />
-            <RadioButton Content="Vertical" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked_1" >
+            <RadioButton x:Name="btn1" Content="Horizontal" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked" />
+            <RadioButton x:Name="btn2" Content="Vertical" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked_1" >
             </RadioButton>
         </StackPanel>
+            
+            <!-- scrollbaren längst ut till höger -->
 
-        <StackPanel x:Name="RektangelPanel" Orientation="Horizontal" >
+
+        <StackPanel x:Name="RectanglePanel" Orientation="Horizontal" >
             <Rectangle Width="100" Height="100" Fill="Red" Margin="10"/>
                 <Rectangle Width="90" Height="90" Fill="Orange" Margin="10"/>
                 <Rectangle Width="80" Height="80" Fill="Yellow" Margin="10"/>
@@ -32,6 +32,8 @@
                 <Rectangle Width="30" Height="30" Fill="black" Margin="10"/>
             </StackPanel>
         </StackPanel>
+       
+        </ScrollViewer>
     </Grid>
 
 </Window>
