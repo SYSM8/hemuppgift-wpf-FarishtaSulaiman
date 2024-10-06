@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="WrapPanel" Height="450" Width="800">
     <Grid>
-        
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical">
+
+                <StackPanel Orientation="Horizontal" >
+                    <RadioButton x:Name="btn3" Content="Horizontal" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked" />
+                    <RadioButton x:Name="btn4" Content="Vertical" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked_1" />
+
+                </StackPanel>
+
+                <WrapPanel x:Name="EllipsePanel" Orientation="Horizontal">
+
+                    <Ellipse Width="100" Height="100" Fill="Red" Margin="10"/>
+                    <Ellipse Width="90" Height="90" Fill="Orange" Margin="10"/>
+                    <Ellipse Width="80" Height="80" Fill="Yellow" Margin="10"/>
+                    <Ellipse Width="70" Height="70" Fill="LightGreen" Margin="10"/>
+                    <Ellipse Width="60" Height="60" Fill="Green" Margin="10"/>
+                    <Ellipse Width="50" Height="50" Fill="LightBlue" Margin="10"/>
+                    <Ellipse Width="40" Height="40" Fill="blue" Margin="10"/>
+                    <Ellipse Width="30" Height="30" Fill="black" Margin="10"/>
+                </WrapPanel>
+            </StackPanel>
+        </ScrollViewer>
+
     </Grid>
 </Window>

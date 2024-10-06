@@ -26,28 +26,12 @@ namespace Hemuppgift_WPFtemplate
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            RadioButton radioButton = sender as RadioButton;
-
-            if (radioButton != null && RectanglePanel != null)
-            {
-                if (btn1.Content.ToString() == "Horizontal")
-                {
-                    RectanglePanel.Orientation = Orientation.Horizontal;
-                }
- 
-
-
-            }
-
-       
+            RectanglePanel.Orientation = Orientation.Horizontal;
         }
 
         private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {
-            if (btn2.Content.ToString() == "Vertical") ;
-            {
-                RectanglePanel.Orientation = Orientation.Vertical;
-            }
+            RectanglePanel.Orientation = Orientation.Vertical;
         }
 
         private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)

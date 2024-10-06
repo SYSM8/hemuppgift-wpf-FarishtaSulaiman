@@ -7,20 +7,16 @@
         mc:Ignorable="d"
         Title="StackPanel" Height="450" Width="800">
 
-    <Grid>
+    
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <StackPanel>
            
             <!-- min panel högst upp med mina radiobuttons-->
         <StackPanel Orientation="Horizontal" >
             <RadioButton x:Name="btn1" Content="Horizontal" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked" />
-            <RadioButton x:Name="btn2" Content="Vertical" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked_1" >
-            </RadioButton>
-        </StackPanel>
-            
-            <!-- scrollbaren längst ut till höger -->
-
-
+            <RadioButton x:Name="btn2" Content="Vertical" HorizontalAlignment="Left" GroupName="Orientation" Margin="5" Checked="RadioButton_Checked_1" />
+                </StackPanel>
+           
         <StackPanel x:Name="RectanglePanel" Orientation="Horizontal" >
             <Rectangle Width="100" Height="100" Fill="Red" Margin="10"/>
                 <Rectangle Width="90" Height="90" Fill="Orange" Margin="10"/>
@@ -34,6 +30,6 @@
         </StackPanel>
        
         </ScrollViewer>
-    </Grid>
+    
 
 </Window>

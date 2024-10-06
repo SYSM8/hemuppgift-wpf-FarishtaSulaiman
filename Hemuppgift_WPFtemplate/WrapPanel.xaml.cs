@@ -23,5 +23,26 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (btn3.IsChecked == true)
+            {
+                EllipsePanel.Orientation = Orientation.Horizontal;
+            }
+        }
+
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (btn4.IsChecked == true)
+            {
+                EllipsePanel.Orientation = Orientation.Vertical;
+            }
+        }
+
+        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
     }
 }

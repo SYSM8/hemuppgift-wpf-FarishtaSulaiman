@@ -6,10 +6,27 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="GridWindow" Height="450" Width="800">
-    <Grid>
 
-        <Grid x:Name="gridContainer"/>
-        <StackPanel>
+    <Grid x:Name="gridContainer">
+    
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <!-- Definiera kolumner-->
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+
+
+    <StackPanel>
         <!-- Första raden -->
         <StackPanel Grid.Row="0" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center">
             <TextBlock x:Name="Row" Text="Row" VerticalAlignment="Center"/>
@@ -30,24 +47,9 @@
             Height="19" 
             Width="59" 
             Click="Button_Click"/>
-    
 
 
-    <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition />
-        <RowDefinition />
-        <RowDefinition />
-    </Grid.RowDefinitions>
-
-    <!-- Definiera kolumner-->
-
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition/>
-        <ColumnDefinition/>
-        <ColumnDefinition/>
-        <ColumnDefinition/>
-    </Grid.ColumnDefinitions>
+        
     </Grid>
 
 </Window>
