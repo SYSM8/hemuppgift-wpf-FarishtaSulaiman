@@ -34,9 +34,6 @@ namespace Hemuppgift_WPFtemplate
             RectanglePanel.Orientation = Orientation.Vertical;
         }
 
-        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-
-        }
+        
     }
 }

@@ -39,10 +39,7 @@ namespace Hemuppgift_WPFtemplate
                 EllipsePanel.Orientation = Orientation.Vertical;
             }
         }
+        
 
-        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-
-        }
     }
 }

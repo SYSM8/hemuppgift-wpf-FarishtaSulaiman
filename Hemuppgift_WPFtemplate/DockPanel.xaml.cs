@@ -23,5 +23,5 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
-    }
-}
+
+       

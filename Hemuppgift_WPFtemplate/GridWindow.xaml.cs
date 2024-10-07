@@ -57,6 +57,7 @@ namespace Hemuppgift_WPFtemplate
                     gridContainer.Children.Add(border);
 
 
+
                     // jag får inte rätt på den delen med att rensa cellen innan nästa ruta ska bli färgad och få en text, har verkligen försökt allt? 
                     // har testat på flera olika sätt och olika koder 
                     // if (border.Background != null && textBlock.Text != null)
