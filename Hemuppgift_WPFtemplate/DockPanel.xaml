@@ -15,12 +15,12 @@
             <Button Content="Bottom" DockPanel.Dock="Bottom" Height="30" Width="80" Margin="5" Click="Button_Click_2"/>
             <Button Content="Center" Height="30" Width="80" Margin="5" Click="Button_Click_4" />
         </DockPanel>
-        
+
         <!-- Bilden som visas när knappen klickas, dold från början -->
-            <Image x:Name="centerImage" Source="TrophyImage.jpg" 
+        <Image x:Name="centerImage" Source="TrophyImage.jpg" 
                    Width="200" Height="200" Visibility="Collapsed" 
                    HorizontalAlignment="Center" VerticalAlignment="Center" />
-      
         
+    
     </Grid>
 </Window>

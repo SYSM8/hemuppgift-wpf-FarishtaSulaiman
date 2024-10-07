@@ -21,19 +21,22 @@ namespace Hemuppgift_WPFtemplate
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-           StackPanel StackPanel = new StackPanel();   
-            StackPanel.Show();
+           
+            StackPanel windowStackPanel = new StackPanel();
+            windowStackPanel.Show();
         }
 
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
-            Window windowWrapPanel = new Window();  
+            
+            WrapPanel windowWrapPanel = new WrapPanel();
             windowWrapPanel.Show();
         }
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-            Window windowDockPanel = new Window();  
+
+            DockPanel windowDockPanel = new DockPanel();
             windowDockPanel.Show();
         }
     }
