@@ -26,7 +26,10 @@ namespace Hemuppgift_WPFtemplate
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            // Rensa tidigare innehåll innan vi utför något nytt
+            ClearAllGridCells();
+
+
             if (int.TryParse(txtBox1.Text, out int row) && int.TryParse(txtBox2.Text, out int column))
             {
 
@@ -34,37 +37,28 @@ namespace Hemuppgift_WPFtemplate
                 int totalRows = gridContainer.RowDefinitions.Count;
                 int totalColumns = gridContainer.ColumnDefinitions.Count;
 
-                // Kontrollera om rad och kolumn är inom gridens gränser
+                // Kontrollera om rad och kolumn är inom gränser
                 if (!string.IsNullOrEmpty(txtBox1.Text) &&
                 !string.IsNullOrEmpty(txtBox2.Text))
                 {
-                    
+
+
                     // Skapa en ny TextBlock som kommer att visa rad och kolumn
                     TextBlock textBlock = new TextBlock
                     {
                         Text = $"Row: {row}, Column: {column}"
                     };
-                  
+
                     Border border = new Border
                     {
                         Background = Brushes.LightGreen, // Färg på cellen
                         Child = textBlock
                     };
-                   
+
 
                     Grid.SetRow(border, row);
                     Grid.SetColumn(border, column);
                     gridContainer.Children.Add(border);
-
-
-
-                    // jag får inte rätt på den delen med att rensa cellen innan nästa ruta ska bli färgad och få en text, har verkligen försökt allt? 
-                    // har testat på flera olika sätt och olika koder 
-                    // if (border.Background != null && textBlock.Text != null)
-                   // {
-                     //   border.Background = new SolidColorBrush(Colors.Transparent);
-                      //  textBlock.Text = string.Empty;
-                    // }
 
                 }
 
@@ -75,8 +69,17 @@ namespace Hemuppgift_WPFtemplate
             }
         }
 
+        private void ClearAllGridCells()
+        {
+
+
+        }
+
+
     }
 }
+
+
 
         
 

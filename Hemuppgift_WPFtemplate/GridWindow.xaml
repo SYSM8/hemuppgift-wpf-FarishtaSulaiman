@@ -7,37 +7,39 @@
         mc:Ignorable="d"
         Title="GridWindow" Height="450" Width="800">
 
-    <Grid x:Name="gridContainer">
-    
-    <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition />
-        <RowDefinition />
-        <RowDefinition />
-    </Grid.RowDefinitions>
+    <Grid x:Name="gridContainer" Margin="0,0,0,-6">
 
-    <!-- Definiera kolumner-->
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition/>
-        <ColumnDefinition/>
-        <ColumnDefinition/>
-        <ColumnDefinition/>
-    </Grid.ColumnDefinitions>
+        <!-- Definiera kolumner-->
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
 
-    <StackPanel>
-        <!-- Första raden -->
-        <StackPanel Grid.Row="0" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock x:Name="Row" Text="Row" VerticalAlignment="Center"/>
-            <TextBox   x:Name="txtBox1" Width="60" Margin="5" />
-            <TextBlock x:Name="Column" Text="Column" VerticalAlignment="Center" />
-            <TextBox   x:Name="txtBox2" Width="60" Margin="5" />
+        <StackPanel Grid.ColumnSpan="2" Margin="0,0,0,108" Grid.RowSpan="2">
+            <!-- Första raden -->
+            <StackPanel Grid.Row="0" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock x:Name="Row" Text="Row" VerticalAlignment="Center" />
+                <TextBox   x:Name="txtBox1" Width="60" Margin="5" />
+                <TextBlock x:Name="Column" Text="Column" VerticalAlignment="Center" />
+                <TextBox   x:Name="txtBox2" Width="60" Margin="5" />
+
+            </StackPanel>
+
         </StackPanel>
 
-        </StackPanel>
-
-        <Button Grid.Column="1" 
+        <Button Grid.Column="2" 
             Grid.Row="0"
             Content="Apply" 
             HorizontalAlignment="Left" 
@@ -49,7 +51,7 @@
             Click="Button_Click"/>
 
 
-        
+
     </Grid>
 
 </Window>

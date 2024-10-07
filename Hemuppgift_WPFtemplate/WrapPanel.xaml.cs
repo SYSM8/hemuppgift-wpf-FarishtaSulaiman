@@ -24,22 +24,32 @@ namespace Hemuppgift_WPFtemplate
             InitializeComponent();
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        private void verticalScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs <double> e)
         {
-            if (btn3.IsChecked == true)
-            {
-                EllipsePanel.Orientation = Orientation.Horizontal;
-            }
+            EllipsePanel.Margin = new Thickness(0, -e.NewValue, 0, 0);
         }
 
-        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
-        {
-            if (btn4.IsChecked == true)
+            private void RadioButton_Checked(object sender, RoutedEventArgs e)
             {
-                EllipsePanel.Orientation = Orientation.Vertical;
+
+                {
+                    EllipsePanel.Orientation = Orientation.Horizontal;
+                }
             }
-        }
+
+            private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+            {
+
+                {
+                    EllipsePanel.Orientation = Orientation.Vertical;
+                    EllipsePanel.HorizontalAlignment = HorizontalAlignment.Center; 
+                    verticalScrollBar.Maximum = 500;
+                }
+            }
+
+
         
-
     }
 }
+
+
